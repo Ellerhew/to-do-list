@@ -1,0 +1,7 @@
+.controlBar {
+	background-color: rgb(255, 234, 234);
+	padding: 0.5em 1em;
+	font-size: 1.2rem;
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid rgb(223, 216, 216);
+}

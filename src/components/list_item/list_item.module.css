@@ -1,0 +1,28 @@
+.item {
+	background-color: rgb(255, 234, 234);
+	width: 100%;
+	padding: 0.7em 0.7em;
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(223, 216, 216);
+	display: flex;
+	align-items: center;
+}
+
+.item:nth-child(1) {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.status {
+	width: 1em;
+	height: 1em;
+	outline: none;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid rgb(167, 167, 167);
+	margin-right: 1em;
+}
+
+.done {
+	background-color: rgb(235, 134, 168);
+	border: none;
+}

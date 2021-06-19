@@ -1,0 +1,29 @@
+.app {
+	min-height: 100vh;
+	min-width: 100vw;
+	background: url("./image/background_grid.jpg");
+	background-size: auto auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: rgba(240, 248, 255, 0.144);
+	width: 30em;
+	height: 38em;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	/* margin: 0; */
+	color: white;
+	font-size: 2rem;
+	font-family: "Varela Round", sans-serif;
+}
+
+.listAndBar {
+	flex-basis: 1;
+	height: 100%;
+}
