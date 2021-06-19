@@ -6,10 +6,16 @@
 	border-bottom: 1px solid rgb(223, 216, 216);
 	display: flex;
 	align-items: center;
+	transition: 100ms ease-in;
 }
 
 .item:nth-child(1) {
 	border-radius: 5px 5px 0px 0px;
+}
+
+.item:hover {
+	background-color: rgb(247, 197, 197);
+	cursor: pointer;
 }
 
 .status {
@@ -25,4 +31,27 @@
 .done {
 	background-color: rgb(235, 134, 168);
 	border: none;
+}
+
+.name {
+	flex-basis: 1;
+	width: 100%;
+}
+
+.button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: rgb(235, 134, 168);
+	opacity: 0%;
+	font-size: 1rem;
+}
+
+.button:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.item:hover button {
+	opacity: 100%;
 }

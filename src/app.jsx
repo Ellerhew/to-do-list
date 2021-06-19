@@ -23,13 +23,18 @@ function App() {
 		setToDo(updated);
 	};
 
+	const handleDelete = (toDoItem) => {
+		const updated = toDo.filter((item) => item.id !== toDoItem.id);
+		setToDo(updated);
+	};
+
 	return (
 		<div className={styles.app}>
 			<section className={styles.container}>
 				<h1 className={styles.title}>T O D O</h1>
 				<AddForm handleAdd={handleAdd} />
 				<div className={styles.listAndBar}>
-					<ListBox toDo={toDo} />
+					<ListBox toDo={toDo} handleDelete={handleDelete} />
 					<ControlBar />
 				</div>
 			</section>
