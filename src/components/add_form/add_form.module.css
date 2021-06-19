@@ -1,4 +1,4 @@
-@value makerLightBlue,makerDarkBlue, makerGray, makerBlue from '../../common/colors.css';
+@value makerLightBlue,makerDarkBlue, makerBlack, makerGray, makerBlue from '../../common/colors.css';
 
 .addForm {
 	display: flex;
@@ -10,21 +10,9 @@
 	margin-bottom: 1em;
 }
 
-.input {
-	flex-basis: 1;
-	width: 100%;
-	padding: 0.5em 1em;
-	font-size: 1.2rem;
-	font-family: "Sunflower", sans-serif;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	background-color: makerLightBlue;
-}
-
 .addForm:hover {
 	transform: scale(1.02);
-	box-shadow: 0px 1px 15px 5px rgba(172, 169, 170, 0.514);
+	box-shadow: 0px 4px 5px 1px rgba(172, 169, 170, 0.514);
 }
 
 .button {
@@ -35,7 +23,7 @@
 	outline: none;
 	border-radius: 50%;
 	border: none;
-	margin-left: 1em;
+	margin-left: 1.4em;
 	cursor: pointer;
 	transition: transform 100ms ease-in;
 	display: flex;
@@ -50,4 +38,17 @@
 .button:hover {
 	background-color: makerDarkBlue;
 	color: white;
+}
+
+.input {
+	flex-basis: 1;
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 1.2rem;
+	font-family: "Sunflower", sans-serif;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: makerLightBlue;
+	color: makerBlack;
 }

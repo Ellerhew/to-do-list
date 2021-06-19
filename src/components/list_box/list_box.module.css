@@ -1,4 +1,4 @@
-@value makerLightBlue from '../../common/colors.css';
+@value makerLightBlue, makerDarkBlue from '../../common/colors.css';
 
 .listBox {
 	list-style: none;
@@ -16,7 +16,7 @@
 }
 
 .listBox::-webkit-scrollbar-thumb {
-	background-color: rgb(235, 134, 168);
+	background-color: makerDarkBlue;
 	border-radius: 5px;
 }
 

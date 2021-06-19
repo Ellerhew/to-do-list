@@ -43,20 +43,13 @@ function App() {
 
 	const handleAllDone = (status) => {
 		const updated = [...toDo];
-		switch (status) {
-			case "Done":
-				updated.forEach((item) => {
-					item.completeStatus = true;
-				});
-				break;
-			case "Undone":
-				updated.forEach((item) => {
-					item.completeStatus = false;
-				});
-				break;
-			default:
-				throw new Error("unknown status");
-		}
+		updated.forEach((item) => {
+			if (status === "mark") {
+				item.completeStatus = true;
+			} else {
+				item.completeStatus = false;
+			}
+		});
 		setToDo(updated);
 	};
 

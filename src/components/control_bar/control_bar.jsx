@@ -3,21 +3,23 @@ import styles from "./control_bar.module.css";
 
 const ControlBar = ({ toDo, handleAllDelete, handleAllDone }) => {
 	const onAllDone = (event) => {
-		handleAllDone(event.target.innerText);
+		handleAllDone(event.target.name);
 	};
 
 	return (
 		<div className={styles.controlBar}>
-			<span>All</span>
 			<div className={styles.buttons}>
-				<button className={styles.button} onClick={onAllDone}>
-					Done
+				<button className={styles.button} name="mark" onClick={onAllDone}>
+					<div className={`${styles.status} ${styles.done}`} />
+					Mark All
 				</button>
-				<button className={styles.button} onClick={onAllDone}>
-					Undone
+				<button className={styles.button} name="unmark" onClick={onAllDone}>
+					<div className={`${styles.status} ${styles.undone}`} />
+					Unmark All
 				</button>
 				<button className={styles.button} onClick={handleAllDelete}>
-					Delete
+					<i className={`far fa-trash-alt ${styles.delete}`}></i>
+					Delete All
 				</button>
 			</div>
 		</div>

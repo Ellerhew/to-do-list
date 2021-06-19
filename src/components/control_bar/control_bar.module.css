@@ -1,20 +1,23 @@
-@value makerLightBlue, makerDarkBlue from '../../common/colors.css';
+@value makerLightBlue, makerBlue, makerDarkBlue,makerGray, makerBlack from '../../common/colors.css';
 
 .controlBar {
 	background-color: makerLightBlue;
-	padding: 0.7em 5em;
+	padding: 0.7em 4em;
 	font-size: 1.2rem;
 	border-radius: 0px 0px 5px 5px;
-	border-top: 1px solid rgb(223, 216, 216);
+	border-top: 1px solid makerGray;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	font-family: "Sunflower", sans-serif;
 	font-size: 0.9rem;
 }
 
 .buttons {
-	margin-left: 1.2em;
+	margin-left: 0.5em;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .button {
@@ -27,10 +30,33 @@
 	margin-right: 0.5em;
 	font-family: "Sunflower", sans-serif;
 	transition: all 100ms ease-in;
+	display: flex;
+	color: makerBlack;
 }
 
 .button:hover {
 	cursor: pointer;
 	color: makerDarkBlue;
 	transform: scale(1.05);
+}
+
+.status {
+	width: 1em;
+	height: 1em;
+	outline: none;
+	border-radius: 50%;
+	border: 1px solid makerGray;
+	margin-right: 0.2em;
+}
+
+.done {
+	background-color: makerBlue;
+}
+
+.undone {
+	background-color: transparent;
+}
+
+.delete {
+	margin-right: 0.2em;
 }

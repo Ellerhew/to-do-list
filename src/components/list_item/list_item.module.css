@@ -3,7 +3,7 @@
 .item {
 	background-color: makerLightBlue;
 	width: 100%;
-	padding: 0.7em 0.7em;
+	padding: 0.7em 1em;
 	font-size: 1.2rem;
 	border-bottom: 1px solid makerGray;
 	display: flex;

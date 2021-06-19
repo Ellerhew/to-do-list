@@ -1,11 +1,14 @@
+@value makerBlack,makerBlue from './common/colors.css';
+
 .app {
 	min-height: 100vh;
 	min-width: 100vw;
-	background: url("./image/background_grid.jpg") rgb(245, 243, 243);
+	background: url("./image/background_grid.jpg") makerBlue;
 	background-size: auto auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: makerBlack;
 }
 
 .container {
@@ -17,7 +20,6 @@
 
 .header {
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 	color: white;
 	margin-bottom: 1em;
