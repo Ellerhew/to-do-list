@@ -71,7 +71,11 @@ function App() {
 	return (
 		<div className={styles.app}>
 			<section className={styles.container}>
-				<h1 className={styles.title}>T O D O</h1>
+				<header className={styles.header}>
+					<h1 className={styles.title}>T O D O</h1>
+					<i className={`far fa-edit ${styles.edit}`}></i>
+				</header>
+
 				<AddForm handleAdd={handleAdd} />
 				<div className={styles.listAndBar}>
 					<ListBox

@@ -1,9 +1,11 @@
+@value makerLightBlue, makerDarkBlue, makerBlue, makerGray, makerLightPurple from '../../common/colors.css';
+
 .item {
-	background-color: rgb(255, 234, 234);
+	background-color: makerLightBlue;
 	width: 100%;
 	padding: 0.7em 0.7em;
 	font-size: 1.2rem;
-	border-bottom: 1px solid rgb(223, 216, 216);
+	border-bottom: 1px solid makerGray;
 	display: flex;
 	align-items: center;
 	transition: 100ms ease-in;
@@ -14,7 +16,7 @@
 }
 
 .item:hover {
-	background-color: rgb(247, 197, 197);
+	background-color: makerLightPurple;
 	cursor: pointer;
 }
 
@@ -30,27 +32,25 @@
 	outline: none;
 	border-radius: 50%;
 	background-color: transparent;
-	border: 1px solid rgb(167, 167, 167);
+	border: 1px solid makerGray;
 	margin-right: 1em;
 }
 
 .done {
-	background-color: rgb(235, 134, 168);
+	background-color: makerBlue;
 	border: none;
-}
-
-.name {
 }
 
 .doneName {
 	text-decoration: line-through;
+	color: makerGray;
 }
 
 .button {
 	background-color: transparent;
 	outline: none;
 	border: none;
-	color: rgb(235, 134, 168);
+	color: makerDarkBlue;
 	opacity: 0%;
 	font-size: 1rem;
 }

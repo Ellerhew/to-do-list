@@ -3,25 +3,35 @@
 	min-width: 100vw;
 	background: url("./image/background_grid.jpg") rgb(245, 243, 243);
 	background-size: auto auto;
-	/* background-repeat: repeat-x; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .container {
-	/* background-color: rgba(240, 248, 255, 0.144); */
 	width: 30em;
-	height: 38em;
+	height: 32em;
 	display: flex;
 	flex-direction: column;
 }
 
-.title {
-	/* margin: 0; */
+.header {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
 	color: white;
+	margin-bottom: 1em;
+}
+
+.title {
+	margin: 0;
 	font-size: 2rem;
-	font-family: "Varela Round", sans-serif;
+}
+
+.edit {
+	font-size: 1.5rem;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
 }
 
 .listAndBar {

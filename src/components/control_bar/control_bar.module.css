@@ -1,5 +1,7 @@
+@value makerLightBlue, makerDarkBlue from '../../common/colors.css';
+
 .controlBar {
-	background-color: rgb(255, 234, 234);
+	background-color: makerLightBlue;
 	padding: 0.7em 5em;
 	font-size: 1.2rem;
 	border-radius: 0px 0px 5px 5px;
@@ -7,8 +9,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 0.8rem;
+	font-family: "Sunflower", sans-serif;
+	font-size: 0.9rem;
 }
 
 .buttons {
@@ -19,15 +21,16 @@
 	background-color: transparent;
 	outline: none;
 	border: none;
-	/* border-radius: 5px; */
 	font-family: "Varela Round", sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	padding: 0.2em;
 	margin-right: 0.5em;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Sunflower", sans-serif;
+	transition: all 100ms ease-in;
 }
 
 .button:hover {
 	cursor: pointer;
-	color: rgb(235, 134, 168);
+	color: makerDarkBlue;
+	transform: scale(1.05);
 }
