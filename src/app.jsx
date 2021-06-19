@@ -6,16 +6,28 @@ import ListBox from "./components/list_box/list_box";
 
 function App() {
 	const [toDo, setToDo] = useState([
-		{ id: 1, name: "물 마시기" },
+		{ id: 1, name: "물 마시기", completeStatus: false },
 		{
 			id: 2,
 			name: "책 읽기",
+			completeStatus: false,
 		},
 		{
 			id: 3,
 			name: "청소하기",
+			completeStatus: false,
 		},
 	]);
+
+	const handleDone = (toDoItem) => {
+		const updated = [...toDo];
+		updated.forEach((item) => {
+			if (item.id === toDoItem.id) {
+				item.completeStatus = item.completeStatus ? false : true;
+			}
+		});
+		setToDo(updated);
+	};
 
 	const handleAdd = (newToDo) => {
 		const updated = [...toDo];
@@ -28,14 +40,45 @@ function App() {
 		setToDo(updated);
 	};
 
+	const handleAllDone = (status) => {
+		const updated = [...toDo];
+		switch (status) {
+			case "Done":
+				updated.forEach((item) => {
+					item.completeStatus = true;
+				});
+				break;
+			case "Undone":
+				updated.forEach((item) => {
+					item.completeStatus = false;
+				});
+				break;
+			default:
+				throw new Error("unknown status");
+		}
+		setToDo(updated);
+	};
+
+	const handleAllDelete = () => {
+		setToDo([]);
+	};
+
 	return (
 		<div className={styles.app}>
 			<section className={styles.container}>
 				<h1 className={styles.title}>T O D O</h1>
 				<AddForm handleAdd={handleAdd} />
 				<div className={styles.listAndBar}>
-					<ListBox toDo={toDo} handleDelete={handleDelete} />
-					<ControlBar />
+					<ListBox
+						toDo={toDo}
+						handleDelete={handleDelete}
+						handleDone={handleDone}
+					/>
+					<ControlBar
+						toDo={toDo}
+						handleAllDelete={handleAllDelete}
+						handleAllDone={handleAllDone}
+					/>
 				</div>
 			</section>
 		</div>

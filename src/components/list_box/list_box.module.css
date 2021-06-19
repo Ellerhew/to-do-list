@@ -6,5 +6,18 @@
 	padding: 0;
 	margin-bottom: 0;
 	border-radius: 5px 5px 0px 0px;
-	overflow-y: scroll;
+	overflow-y: auto;
+}
+
+.listBox::-webkit-scrollbar {
+	width: 5px;
+}
+
+.listBox::-webkit-scrollbar-thumb {
+	background-color: rgb(235, 134, 168);
+	border-radius: 5px;
+}
+
+.listBox::-webkit-scrollbar-track {
+	background-color: transparent;
 }

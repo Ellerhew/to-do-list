@@ -18,6 +18,12 @@
 	cursor: pointer;
 }
 
+.content {
+	display: flex;
+	flex-basis: 1;
+	width: 100%;
+}
+
 .status {
 	width: 1em;
 	height: 1em;
@@ -34,8 +40,10 @@
 }
 
 .name {
-	flex-basis: 1;
-	width: 100%;
+}
+
+.doneName {
+	text-decoration: line-through;
 }
 
 .button {

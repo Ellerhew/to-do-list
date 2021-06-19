@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./list_item.module.css";
 
-const ListItem = ({ toDoItem, handleDelete }) => {
-	const [completeStatus, setCompleteStatus] = useState(false);
-
+const ListItem = ({ toDoItem, handleDelete, handleDone }) => {
 	const onDelete = (event) => {
 		event.preventDefault();
 		handleDelete(toDoItem);
 	};
 
+	const onDone = () => {
+		handleDone(toDoItem);
+	};
+
 	return (
 		<li className={styles.item}>
-			<div
-				className={`${styles.status} ${completeStatus && styles.done}`}
-			></div>
-			<span className={styles.name}>{toDoItem.name}</span>
+			<div className={styles.content} onClick={onDone}>
+				<div
+					className={`${styles.status} ${
+						toDoItem.completeStatus && styles.done
+					}`}
+				></div>
+				<span
+					className={`${styles.name} ${
+						toDoItem.completeStatus && styles.doneName
+					}`}
+				>
+					{toDoItem.name}
+				</span>
+			</div>
 			<button className={styles.button} onClick={onDelete}>
 				<i className="far fa-trash-alt"></i>
 			</button>

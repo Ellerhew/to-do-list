@@ -1,7 +1,27 @@
 .controlBar {
 	background-color: rgb(255, 234, 234);
-	padding: 0.5em 1em;
+	padding: 0.7em 5em;
 	font-size: 1.2rem;
 	border-radius: 0px 0px 5px 5px;
 	border-top: 1px solid rgb(223, 216, 216);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Varela Round", sans-serif;
+	font-size: 0.7rem;
+}
+
+.button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	font-family: "Varela Round", sans-serif;
+	font-size: 0.7rem;
+	padding-left: 1em;
+	padding-right: 0em;
+}
+
+.button:hover {
+	cursor: pointer;
+	color: rgb(235, 134, 168);
 }

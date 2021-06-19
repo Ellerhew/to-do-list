@@ -13,6 +13,7 @@ const AddForm = ({ handleAdd }) => {
 		const newToDo = {
 			id: Date.now(),
 			name: inputRef.current.value,
+			completeStatus: false,
 		};
 		handleAdd(newToDo);
 		inputRef.current.value = "";
