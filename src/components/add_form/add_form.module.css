@@ -4,6 +4,8 @@
 	background-color: rgb(255, 234, 234);
 	border-radius: 5px;
 	align-items: center;
+	transition: all 200ms ease-in;
+	margin-bottom: 1em;
 }
 
 .input {
@@ -18,9 +20,15 @@
 	background-color: rgb(255, 234, 234);
 }
 
+.addForm:hover {
+	transform: scale(1.03);
+	box-shadow: 0px 1px 15px 5px rgba(172, 169, 170, 0.514);
+}
+
 .button {
-	background-color: rgb(235, 134, 168);
-	color: white;
+	background-color: white;
+	color: rgb(235, 134, 168);
+
 	width: 1.5em;
 	height: 1.5em;
 	outline: none;
@@ -39,5 +47,6 @@
 }
 
 .button:hover {
-	transform: scale(1.05);
+	background-color: rgb(235, 134, 168);
+	color: white;
 }

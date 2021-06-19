@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./app.module.css";
 import AddForm from "./components/add_form/add_form";
 import ControlBar from "./components/control_bar/control_bar";
 import ListBox from "./components/list_box/list_box";
 
 function App() {
-	const [toDo, setToDo] = useState([
-		{ id: 1, name: "물 마시기", completeStatus: false },
-		{
-			id: 2,
-			name: "책 읽기",
-			completeStatus: false,
-		},
-		{
-			id: 3,
-			name: "청소하기",
-			completeStatus: false,
-		},
-	]);
+	const loadToDos = () => {
+		const toDos_ls = localStorage.getItem("TODOS");
+		if (toDos_ls === null) {
+			return;
+		}
+		const toDos = JSON.parse(toDos_ls);
+		return toDos;
+	};
+
+	const [toDo, setToDo] = useState(
+		loadToDos() || [
+			{ id: 1, name: "Add your own To Do here!", completeStatus: false },
+		]
+	);
 
 	const handleDone = (toDoItem) => {
 		const updated = [...toDo];
@@ -62,6 +63,10 @@ function App() {
 	const handleAllDelete = () => {
 		setToDo([]);
 	};
+
+	useEffect(() => {
+		localStorage.setItem("TODOS", JSON.stringify(toDo));
+	}, [toDo]);
 
 	return (
 		<div className={styles.app}>
