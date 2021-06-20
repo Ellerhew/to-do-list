@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React, { memo, useRef } from "react";
 import styles from "./add_form.module.css";
 
-const AddForm = ({ handleAdd }) => {
+const AddForm = memo(({ handleAdd }) => {
 	const inputRef = useRef();
 
 	const onAdd = (event) => {
@@ -31,6 +31,6 @@ const AddForm = ({ handleAdd }) => {
 			></input>
 		</form>
 	);
-};
+});
 
 export default AddForm;

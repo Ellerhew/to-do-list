@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./control_bar.module.css";
 
-const ControlBar = ({ toDo, handleAllDelete, handleAllDone }) => {
+const ControlBar = memo(({ handleAllDelete, handleAllDone }) => {
 	const onAllDone = (event) => {
 		handleAllDone(event.target.name);
 	};
@@ -24,6 +24,6 @@ const ControlBar = ({ toDo, handleAllDelete, handleAllDone }) => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default ControlBar;

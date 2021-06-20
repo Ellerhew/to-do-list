@@ -68,7 +68,6 @@ function App() {
 					<h1 className={styles.title}>T O D O</h1>
 					<i className={`far fa-edit ${styles.edit}`}></i>
 				</header>
-
 				<AddForm handleAdd={handleAdd} />
 				<div className={styles.listAndBar}>
 					<ListBox
@@ -77,7 +76,6 @@ function App() {
 						handleDone={handleDone}
 					/>
 					<ControlBar
-						toDo={toDo}
 						handleAllDelete={handleAllDelete}
 						handleAllDone={handleAllDone}
 					/>

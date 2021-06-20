@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./list_item.module.css";
 
-const ListItem = ({ toDoItem, handleDelete, handleDone }) => {
+const ListItem = memo(({ toDoItem, handleDelete, handleDone }) => {
 	const onDelete = () => {
 		handleDelete(toDoItem);
 	};
@@ -31,6 +31,6 @@ const ListItem = ({ toDoItem, handleDelete, handleDone }) => {
 			</button>
 		</li>
 	);
-};
+});
 
 export default ListItem;
