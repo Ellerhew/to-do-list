@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./list_item.module.css";
 
 const ListItem = ({ toDoItem, handleDelete, handleDone }) => {
-	const onDelete = (event) => {
-		event.preventDefault();
+	const onDelete = () => {
 		handleDelete(toDoItem);
 	};
 

@@ -1,4 +1,4 @@
-@value makerLightBlue,makerDarkBlue, makerBlack, makerGray, makerBlue from '../../common/colors.css';
+@value makerLightBlue,makerDarkBlue, makerBlack, makerGray, makerWhite makerBlue from '../../common/colors.css';
 
 .addForm {
 	display: flex;
@@ -16,7 +16,7 @@
 }
 
 .button {
-	background-color: white;
+	background-color: makerWhite;
 	color: makerDarkBlue;
 	width: 1.5em;
 	height: 1.5em;
@@ -37,7 +37,7 @@
 
 .button:hover {
 	background-color: makerDarkBlue;
-	color: white;
+	color: makerWhite;
 }
 
 .input {

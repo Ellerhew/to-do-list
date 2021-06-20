@@ -9,7 +9,6 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-family: "Sunflower", sans-serif;
 	font-size: 0.9rem;
 }
 
@@ -24,7 +23,6 @@
 	background-color: transparent;
 	outline: none;
 	border: none;
-	font-family: "Varela Round", sans-serif;
 	font-size: 0.9rem;
 	padding: 0.2em;
 	margin-right: 0.5em;

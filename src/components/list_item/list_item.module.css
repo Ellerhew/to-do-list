@@ -1,4 +1,4 @@
-@value makerLightBlue, makerDarkBlue, makerBlue, makerGray, makerLightPurple from '../../common/colors.css';
+@value makerLightBlue, makerDarkBlue, makerBlue, makerGray, makerWhite, makerLightPurple from '../../common/colors.css';
 
 .item {
 	background-color: makerLightBlue;
@@ -53,11 +53,12 @@
 	color: makerDarkBlue;
 	opacity: 0%;
 	font-size: 1rem;
+	transition: opacity 100ms ease-in;
 }
 
 .button:hover {
 	cursor: pointer;
-	color: white;
+	color: makerWhite;
 }
 
 .item:hover button {

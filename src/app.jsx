@@ -44,7 +44,7 @@ function App() {
 	const handleAllDone = (status) => {
 		const updated = [...toDo];
 		updated.forEach((item) => {
-			if (status === "mark") {
+			if (status === "done") {
 				item.completeStatus = true;
 			} else {
 				item.completeStatus = false;

@@ -9,11 +9,11 @@ const ControlBar = ({ toDo, handleAllDelete, handleAllDone }) => {
 	return (
 		<div className={styles.controlBar}>
 			<div className={styles.buttons}>
-				<button className={styles.button} name="mark" onClick={onAllDone}>
+				<button className={styles.button} name="done" onClick={onAllDone}>
 					<div className={`${styles.status} ${styles.done}`} />
 					Mark All
 				</button>
-				<button className={styles.button} name="unmark" onClick={onAllDone}>
+				<button className={styles.button} name="undone" onClick={onAllDone}>
 					<div className={`${styles.status} ${styles.undone}`} />
 					Unmark All
 				</button>
