@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/to-do-list/static/css/main.49787413.chunk.css",
+    "main.js": "/to-do-list/static/js/main.0ab5f17b.chunk.js",
+    "main.js.map": "/to-do-list/static/js/main.0ab5f17b.chunk.js.map",
+    "runtime-main.js": "/to-do-list/static/js/runtime-main.c5923dfa.js",
+    "runtime-main.js.map": "/to-do-list/static/js/runtime-main.c5923dfa.js.map",
+    "static/js/2.00180d32.chunk.js": "/to-do-list/static/js/2.00180d32.chunk.js",
+    "static/js/2.00180d32.chunk.js.map": "/to-do-list/static/js/2.00180d32.chunk.js.map",
+    "index.html": "/to-do-list/index.html",
+    "static/css/main.49787413.chunk.css.map": "/to-do-list/static/css/main.49787413.chunk.css.map",
+    "static/js/2.00180d32.chunk.js.LICENSE.txt": "/to-do-list/static/js/2.00180d32.chunk.js.LICENSE.txt",
+    "static/media/app.module.css": "/to-do-list/static/media/background_grid.d5767dbd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5923dfa.js",
+    "static/js/2.00180d32.chunk.js",
+    "static/css/main.49787413.chunk.css",
+    "static/js/main.0ab5f17b.chunk.js"
+  ]
+}
